@@ -1,6 +1,0 @@
-App key
-pjx5ofi01owc5rr
-
-App secret
-qyod703ejfjr03v
-
