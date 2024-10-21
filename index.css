@@ -62,8 +62,33 @@
     font-weight: bold; /* 文字加粗 */
     text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* 文字陰影，增加可讀性 */
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 0 2vw;
+}
+
+.overlay-ans-text {
+    position: absolute; /* 文字絕對定位於圖片上 */
+    color: white; /* 文字顏色 */
+    font-size: 2vw; /* 文字大小 */
+    font-weight: bold; /* 文字加粗 */
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* 文字陰影，增加可讀性 */
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0 2vw;
+}
+
+.overlay-ss-fun-text {
+    position: absolute; /* 文字絕對定位於圖片上 */
+    top: 50%; /* 垂直中心 */
+    left: 50%; /* 水平中心 */
+    transform: translate(-50%, -50%); /* 確保文字完全居中 */
+    color: white; /* 文字顏色 */
+    font-size: 2vw; /* 文字大小 */
+    font-weight: bold; /* 文字加粗 */
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* 文字陰影，增加可讀性 */
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0 1vw;
 }
 
 /* RWD 設定 */
@@ -78,6 +103,14 @@
 	.overlay-moive-text {
 		font-size: 5vw; /* 文字大小 */
 	}
+	.overlay-ans-text {
+		font-size: 5vw; /* 文字大小 */
+	}
+	.overlay-ss-fun-text {
+		font-size: 5vw; /* 文字大小 */
+	}
+	
+	
 }
 
 

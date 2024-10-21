@@ -40,10 +40,11 @@
 	</div>
 
 	<div class="text-center fs-1">
-		謝謝您來參加我們的婚宴<br>與我們一同共享這份喜悅<br>下面與您分享婚宴的活動照片與內容
+		我親愛的親友<br> 在此收到了你滿滿的祝福<br>雖然您無法親臨婚宴<br>仍很高興與您分享這份喜悅
+
 	</div>
 
-	<hr style="border: 3px solid red;">
+	<hr style="border: 2px solid red;">
 
 	<div class="text-center fs-1">婚紗 & 菜單</div>
 	<div>
@@ -53,21 +54,21 @@
 					<a target="_blank" href="https://myalbum.com/album/LfRK4wTM5YYaJs/"><img
 						width="100%"
 						src="https://myalbum.com/album/LfRK4wTM5YYaJs/cover?size=1000"
-						border="0" style="border-radius: 5px;"/>
+						border="0" style="border-radius: 5px;" />
 						<div class="overlay-text">婚紗照</div></a>
 
 				</div>
-				<div class="col" style="align-items: center;">
+				<div class="col">
 					<a target="_blank" href="https://myalbum.com/album/A8sag8q88HGfb6/"><img
 						width="80%" border="0" src="images/menu.png">
-					<div class="overlay-text">菜單</div></a>
+						<div class="overlay-text">菜單</div></a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<hr style="border: 3px solid red;">
+	<hr style="border: 2px solid red;">
 
-	<div class="text-center fs-1">開席-搞笑-彩蛋-影片</div>
+	<div class="text-center fs-1">影片</div>
 	<div>
 		<div class="container text-center">
 			<div class="row align-items-start">
@@ -92,7 +93,7 @@
 			</div>
 		</div>
 	</div>
-	<hr style="border: 3px solid red;">
+	<hr style="border: 2px solid red;">
 
 	<div class="text-center fs-1">怪盜基德偷走的「照片」</div>
 
@@ -102,78 +103,75 @@
 			<img src="images/thief.jpg" style="width: 80%; height: auto;">
 		</div>
 	</div>
-	<div class="text-center fs-1">解答</div>
 
-	<hr style="border: 3px solid red;">
+	<div>
+		<div class="container text-center">
+			<div class="row">
+				<div class="col">
+					<a href="javascript:void(0);" onclick="showImage('ans-A.jpg');"
+						width="100%"> <i
+						class="bi bi-map icon text-primary d-block mb-1"></i>
+						<div class="overlay-ans-text">答案A</div>
+					</a>
+				</div>
+				<div class="col">
+					<a href="javascript:void(0);" onclick="showImage('ans-B.jpg');"
+						width="100%"> <i
+						class="bi bi-map icon text-primary d-block mb-1"></i>
+						<div class="overlay-ans-text">答案B</div>
+					</a>
+				</div>
+				<div class="col">
+					<a href="javascript:void(0);" onclick="showImage('ans-C.jpg');"
+						width="100%"> <i
+						class="bi bi-map icon text-primary d-block mb-1"></i>
+						<div class="overlay-ans-text">答案C</div>
+					</a>
+				</div>
+				<div class="col">
+					<a href="javascript:void(0);" onclick="showImage('ans-D.jpg');"
+						width="100%"> <i
+						class="bi bi-map icon text-primary d-block mb-1"></i>
+						<div class="overlay-ans-text">答案D</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
 
+	<div class="text-center fs-3">
+		解謎後<br>將看到下面被偷走的照片
+	</div>
+	<div>
+		<div class="container text-center">
+			<div class="row align-items-start">
+				<div id="menu-normal" class="col">
+					<a target="_blank" href="https://myalbum.com/album/8s99SLDxDhMdrQ/"><img
+						width="100%"
+						src="https://myalbum.com/album/8s99SLDxDhMdrQ/cover?size=1000"
+						border="0" />
+						<div class="overlay-ss-fun-text">
+							趣味<br>婚紗照
+						</div></a>
 
-	<!-- password fail -->
-	<div id="fail-card" class="card-parent">
-		<div class="card">
-			<img src="images/password_fail.jpg" class="card-img-top" alt="密碼錯誤">
-			<div class="card-body text-center">
-				<h5 id="card-title">解密失敗</h5>
-				<a href="#">
-					<button id="fail-btn" class="btn btn-dark"
-						style="border-radius: 20px;">再試一次！</button>
-				</a>
+				</div>
+				<div class="col">
+					<a target="_blank" href="https://myalbum.com/album/wYTW7X7VTy2kii/"><img
+						width="100%"
+						src="https://myalbum.com/album/wYTW7X7VTy2kii/cover?size=1000"
+						border="0" />
+						<div class="overlay-ss-fun-text">
+							隱藏版<br>婚紗照
+						</div></a>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- password success -->
-	<div id="success-card" class="card-parent">
-		<div class="card">
-			<img src="images/password_success.jpg" class="card-img-top"
-				alt="成功解密">
 
-			<div class="card-body text-center">
-				<h5 id="card-title">
-					您是第<span id="success-num"></span>個答對的人
-				</h5>
-				<a id="funUrl" href="#" target="_blank">
-					<button id="success-btn" class="btn btn-dark"
-						style="border-radius: 20px;">開啟趣味版婚紗照</button>
-				</a> <br> <br> <a id="ssUrl" href="#" target="_blank">
-					<button id="success-btn" class="btn btn-dark"
-						style="border-radius: 20px;">開啟隱藏版婚紗照</button>
-				</a> <br> <br>
-				<!-- 新增關閉按鈕 -->
-				<button id="close-btn" class="btn btn-dark"
-					style="border-radius: 20px; font-size: 1.2rem;">關閉</button>
-
-			</div>
-		</div>
-	</div>
-
-	<!-- password winner -->
-	<div id="winner-card" class="card-parent">
-		<div class="card">
-			<img src="images/password_success.jpg" class="card-img-top"
-				alt="成功解密">
-			<div class="card-body text-center">
-				<h5 id="card-title" class="fs-2">
-					您是第<span id="winner-num"></span>個答對的人
-				</h5>
-				<div>
-					<label for="winner-name" class="fs-3">恭喜您贏得獎品</label>
-				</div>
-				<div>
-					<label for="winner-name" class="fs-3">請輸您的名字或匿稱</label>
-				</div>
-				<div>
-					<input id="winner-name" class="fs-3" type="text">
-				</div>
-				<div>
-					<input id="winner-uuid" class="fs-3" type="hidden">
-				</div>
-				<button id="winner-btn" class="btn btn-dark"
-					style="border-radius: 20px;">
-					<span class="fs-5">打開被偷的婚紗照</span>
-				</button>
-			</div>
-		</div>
-	</div>
+	<hr style="border: 2px solid red;">
 
 
 	<!-- footer -->
@@ -202,5 +200,12 @@
 	<script src="thief/thief.js"></script>
 	<script src="upload.js"></script>
 </body>
+
+<script>
+    function showImage(jpg) {
+    url = 'images/'+jpg
+    	window.open(url, '_blank', 'width=800,height=600');
+    }
+</script>
 
 </html>
