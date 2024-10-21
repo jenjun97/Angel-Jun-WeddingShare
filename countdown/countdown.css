@@ -1,0 +1,47 @@
+/* 設置頁面背景顏色 */
+body {
+	background-color: #FFFFFF;
+}
+
+/* 設置計時器的字體和顏色 */
+#timer {
+	font-family: Arial, Helvetica;
+	font-size: 10vw;
+	color: black;
+}
+
+.sp-album-title {
+	font-size: 4rem;
+	margin-top: 1rem;
+}
+
+.sp-album-text {
+	font-family: Arial, Helvetica !important;
+	font-size: 5rem !important;
+	margin-top: -2rem;
+}
+
+/* 按鈕樣式設置 */
+button {
+	background-color: #fcb900;
+	border: none;
+	color: #333333;
+	padding: 15px 30px;
+	margin: 0px 0px 0px 20px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+/* RWD 設定 */
+@media ( max-width : 768px) {
+	.sp-album-title {
+		font-size: 2rem;
+		margin-top: 1rem;
+	}
+	.sp-album-text {
+		font-family: Arial, Helvetica !important;
+		font-size: 3rem !important;
+		margin-top: -1rem;
+	}
+}

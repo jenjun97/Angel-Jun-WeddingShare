@@ -1,0 +1,84 @@
+:root {
+    --overlay-padding-top-bottom: 10px; /* 調整方框上下padding */
+    --overlay-padding-left-right: 5vw; /* 調整方框左右padding */
+    --overlay-font-size: 2rem; /* 調整文字大小 */
+    --overlay-bg-color: rgba(0, 0, 0, 0.5); /* 調整方框背景顏色 */
+}
+
+/* 設置album類的相對定位，以便overlay-text正確定位 */
+.album {
+    position: relative;
+}
+
+
+.container .col {
+    position: relative; /* 確保父容器是相對定位 */
+}
+
+/* 設置半透明方框樣式 */
+.title-overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--overlay-bg-color); /* 使用變數 */
+    color: white;
+    padding: var(--overlay-padding-top-bottom) var(--overlay-padding-left-right); /* 使用變數 */
+    border-radius: 5px;
+    text-align: center;
+    font-size: var(--overlay-font-size); /* 使用變數 */
+    white-space: nowrap; /* 防止文字換行 */
+    box-sizing: border-box; /* 確保padding不影響元素的實際寬度 */
+}
+
+.overlay-text {
+    position: absolute; /* 文字絕對定位於圖片上 */
+    top: 50%; /* 垂直中心 */
+    left: 50%; /* 水平中心 */
+    transform: translate(-50%, -50%); /* 確保文字完全居中 */
+    color: white; /* 文字顏色 */
+    font-size: 2vw; /* 文字大小 */
+    font-weight: bold; /* 文字加粗 */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* 文字陰影，增加可讀性 */
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 0 2vw;
+	
+}
+
+.layout-movie{
+	/*border: 2px solid;*/
+	margin: 0px 2px;
+	border-radius: 5px;
+}
+
+.overlay-moive-text {
+    position: absolute; /* 文字絕對定位於圖片上 */
+    top: 50%; /* 垂直中心 */
+    left: 50%; /* 水平中心 */
+    transform: translate(-50%, -50%); /* 確保文字完全居中 */
+    color: white; /* 文字顏色 */
+    font-size: 2vw; /* 文字大小 */
+    font-weight: bold; /* 文字加粗 */
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* 文字陰影，增加可讀性 */
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 2vw;
+}
+
+/* RWD 設定 */
+@media ( max-width : 768px) {
+	.title--overlay-text {
+	font-size:1rem;
+	}
+	
+	.overlay-text{
+	font-size:5vw;
+	}
+	.overlay-moive-text {
+		font-size: 5vw; /* 文字大小 */
+	}
+}
+
+
+
