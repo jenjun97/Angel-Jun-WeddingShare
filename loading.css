@@ -1,0 +1,152 @@
+/* 設定body的寬度和高度為100%和100vh，並將內容置中 */
+body {
+    /* 設定body的寬度為100% */
+    width: 100%;
+    /* 設定body的高度為100vh */
+    height: 70vh;
+    /* 設定body內部元素的顯示方式為flex */
+    display: flex;
+    /* 設定body內部元素在主軸上的對齊方式為居中 */
+    justify-content: center;
+    /* 設定body內部元素在交叉軸上的對齊方式為居中 */
+    align-items: center;
+}
+
+/* 設定spinner-square的大小和佈局 */
+.spinner-square {
+    /* 設定spinner-square內部元素的顯示方式為flex */
+    display: flex;
+    /* 設定spinner-square內部元素的排列方向為水平方向 */
+    flex-direction: row;
+    /* 設定spinner-square的寬度為90px */
+    width: 190px;
+    /* 設定spinner-square的高度為120px */
+    height: 240px;
+}
+
+/* 設定每個square的大小和邊界圓角 */
+.spinner-square > .square {
+    /* 設定square的寬度為17px */
+    width: 45px;
+    /* 設定square的高度為80px */
+    height: 80px;
+    /* 設定square的上下左右邊距為auto，讓其自動居中 */
+    margin: auto 5px ;
+    /* 設定square的邊界圓角為4px */
+    border-radius: 8px;
+}
+
+/* 定義square-1的動畫 */
+.square-1 {
+    /* 設定square-1的動畫為square-anim，持續1200ms，使用cubic-bezier函數，0s延遲，無限次數 */
+    animation: square-anim 1200ms cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s infinite;
+}
+
+/* 定義square-2的動畫，延遲200ms開始 */
+.square-2 {
+    /* 設定square-2的動畫為square-anim，持續1200ms，使用cubic-bezier函數，200ms延遲，無限次數 */
+    animation: square-anim 1200ms cubic-bezier(0.445, 0.05, 0.55, 0.95) 200ms infinite;
+}
+
+/* 定義square-3的動畫，延遲400ms開始 */
+.square-3 {
+    /* 設定square-3的動畫為square-anim，持續1200ms，使用cubic-bezier函數，400ms延遲，無限次數 */
+    animation: square-anim 1200ms cubic-bezier(0.445, 0.05, 0.55, 0.95) 400ms infinite;
+}
+.square-4 {
+    /* 設定square-3的動畫為square-anim，持續1200ms，使用cubic-bezier函數，400ms延遲，無限次數 */
+    animation: square-anim 1200ms cubic-bezier(0.445, 0.05, 0.55, 0.95) 600ms infinite;
+}
+.square-5 {
+    /* 設定square-3的動畫為square-anim，持續1200ms，使用cubic-bezier函數，400ms延遲，無限次數 */
+    animation: square-anim 1200ms cubic-bezier(0.445, 0.05, 0.55, 0.95) 800ms infinite;
+}
+
+/* 定義square-anim的關鍵影格動畫 */
+@keyframes square-anim {
+    /* 起始狀態：高度80px，背景顏色為rgb(111, 163, 240) */
+    0% {
+        /* 設定square在0%時的高度為80px */
+        height: 40px;
+        /* 設定square在0%時的背景顏色為rgb(111, 163, 240) */
+        background-color: rgb(111, 163, 240);
+    }
+    /* 20%狀態：高度80px */
+    20% {
+        /* 設定square在20%時的高度為80px */
+        height: 40px;
+    }
+    /* 40%狀態：高度增加到120px，背景顏色變為rgb(111, 200, 240) */
+    40% {
+        /* 設定square在40%時的高度為120px */
+        height: 240px;
+        /* 設定square在40%時的背景顏色為rgb(111, 200, 240) */
+        background-color: rgb(111, 200, 240);
+    }
+    /* 80%狀態：高度回到80px */
+    80% {
+        /* 設定square在80%時的高度為80px */
+        height: 40px;
+    }
+    /* 結束狀態：高度80px，背景顏色恢復為rgb(111, 163, 240) */
+    100% {
+        /* 設定square在100%時的高度為80px */
+        height: 40px;
+        /* 設定square在100%時的背景顏色為rgb(111, 163, 240) */
+        background-color: rgb(111, 163, 240);
+    }
+}
+
+/* 響應式設計：當螢幕寬度小於600px時調整spinner-square和square的大小 */
+@media (max-width: 600px) {
+    /* 當螢幕寬度小於600px時，調整spinner-square的寬度和高度 */
+    .spinner-square {
+        /* 設定spinner-square的寬度為45px */
+        width: 90px;
+        /* 設定spinner-square的高度為60px */
+        height: 120px;
+    }
+
+    /* 當螢幕寬度小於600px時，調整square的寬度和高度 */
+    .spinner-square > .square {
+        /* 設定square的寬度為8.5px */
+        width: 8.5px;
+        /* 設定square的高度為40px */
+        height: 40px;
+    }
+
+    /* 定義響應式設計下的square-anim關鍵影格動畫 */
+    @keyframes square-anim {
+        /* 起始狀態：高度40px，背景顏色為rgb(111, 163, 240) */
+        0% {
+            /* 設定square在0%時的高度為40px */
+            height: 40px;
+            /* 設定square在0%時的背景顏色為rgb(111, 163, 240) */
+            background-color: rgb(111, 163, 240);
+        }
+        /* 20%狀態：高度40px */
+        20% {
+            /* 設定square在20%時的高度為40px */
+            height: 40px;
+        }
+        /* 40%狀態：高度增加到60px，背景顏色變為rgb(111, 200, 240) */
+        40% {
+            /* 設定square在40%時的高度為60px */
+            height: 120px;
+            /* 設定square在40%時的背景顏色為rgb(111, 200, 240) */
+            background-color: rgb(111, 200, 240);
+        }
+        /* 80%狀態：高度回到40px */
+        80% {
+            /* 設定square在80%時的高度為40px */
+            height: 40px;
+        }
+        /* 結束狀態：高度40px，背景顏色恢復為rgb(111, 163, 240) */
+        100% {
+            /* 設定square在100%時的高度為40px */
+            height: 40px;
+            /* 設定square在100%時的背景顏色為rgb(111, 163, 240) */
+            background-color: rgb(111, 163, 240);
+        }
+    }
+}

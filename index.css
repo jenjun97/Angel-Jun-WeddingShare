@@ -121,6 +121,9 @@
 		font-size: 5vw; /* 文字大小 */
 	}
 	
+	.ans-title{
+		font-size: 1em !important; /* 文字大小 */
+	}
 	
 }
 
